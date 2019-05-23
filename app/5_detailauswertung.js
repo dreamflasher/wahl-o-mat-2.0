@@ -264,14 +264,14 @@ rw += '<!-- Blindennavigation: Ende -->';
                                         parteiAntwortText = parteiAntwortText.replace(/\[THESE\]/, WOMT_aThesen[a][S_nSprache][0]);
                                         parteiAntwortText = parteiAntwortText.replace(/\[PARTEI\]/, WOMT_aParteien[lNr][S_nSprache][1]);
                                         
-                                        kommentar = '';
-				    			        if (WOMT_aThesenParteienText[a][lNr][0]!="") {
-                                	    	kommentar = '&bdquo;' 
-                                	    	    + wom_html(WOMT_aThesenParteienText[a][lNr][0]) 
-                                	    	    + '&rdquo;';
-                                		} else {
-                                			kommentar = WOMT_aTexte["5_partei_keinebegruendung"][S_nSprache];
-                                		}
+                                        kommentar = 'Die bpb hat die Begründungen der Parteien grundlos offline genommen, falls sie dir vorliegen, bitte schicke sie mir an df-bpb@dreamflasher.de';
+				    			        //if (WOMT_aThesenParteienText[a][lNr][0]!="") {
+                                	    //	kommentar = '&bdquo;' 
+                                	    //	    + wom_html(WOMT_aThesenParteienText[a][lNr][0]) 
+                                	    //	    + '&rdquo;';
+                                		//} else {
+                                		//	kommentar = WOMT_aTexte["5_partei_keinebegruendung"][S_nSprache];
+                                		//}
 				    			        rw += '<li' 
 				    			            if (aktivThese == a) {
 				    			                rw += ' class="on"';

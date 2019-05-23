@@ -44,7 +44,7 @@ function print_main_foot_partner() {
             rw += '<div class="footertext">\n';             
             rw += wom_html(WOMT_aTexte["wahlomat_footer_medienpartner_text"][S_nSprache])+'<\/div>\n';
             
-            lTextNF = '(Dieser Link öffnet sich in einem neuen Fenster.)';
+            lTextNF = '(Dieser Link Ã¶ffnet sich in einem neuen Fenster.)';
             
             rw += '<div class="clear">&nbsp;<\/div>';
             rw += '<div class="bpartner"><a href="'

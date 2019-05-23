@@ -57,7 +57,7 @@ function print_main_foot_partner() {
                 + '<\/span><\/a><\/div>';
             rw += '<\/div>';                
     }
-    return rw;		            
+    return "";		            
 }
 
 function check_umfrage() {

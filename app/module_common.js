@@ -175,7 +175,7 @@ function print_main_foot_all() {
                 rw += '</div>\n';
             rw += '<\/div>\n';
     }
-	return rw;				
+	return "";				
 }
         	
 function print_meta(){	
@@ -228,6 +228,7 @@ function wom_titletag(text){
 }
 
 function wom_html(text,ergebnis){
+	text2 = text;
     text = text.replace(/\#/g,"'");
     text = text.replace(/\~\@\-\@\~/g,"'");
     if (ergebnis==1){
@@ -247,7 +248,7 @@ function wom_html(text,ergebnis){
     text = text.replace(/�/,"&ouml;");
     text = text.replace(/�/,"&szlig;");
 	//text = text.replace(/�/,"&copy;");
-	return text;
+	return text2;
 }
 
 function wom_url(text){

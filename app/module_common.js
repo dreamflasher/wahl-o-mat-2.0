@@ -175,7 +175,7 @@ function print_main_foot_all() {
                 rw += '</div>\n';
             rw += '<\/div>\n';
     }
-	return "";				
+	return rw;				
 }
         	
 function print_meta(){	
@@ -212,7 +212,7 @@ function print_meta(){
     
         rw  += '</style>\n';
         
-	return "";
+	return rw;
 }
 
 function wom_titletag(text){
@@ -228,25 +228,25 @@ function wom_titletag(text){
 }
 
 function wom_html(text,ergebnis){
-    //text = text.replace(/\#/g,"'");
-    //text = text.replace(/\~\@\-\@\~/g,"'");
-    //if (ergebnis==1){
-    //    text = text.replace(/\[BSLZ\]/g,"- ");
-    //    text = text.replace(/\[LZ\]/g," ");
-    //} else {
-    //    text = text.replace(/\[BSLZ\]/g,"");
-    //    text = text.replace(/\[LZ\]/g,"");
-    //}		   	    
+    text = text.replace(/\#/g,"'");
+    text = text.replace(/\~\@\-\@\~/g,"'");
+    if (ergebnis==1){
+        text = text.replace(/\[BSLZ\]/g,"- ");
+        text = text.replace(/\[LZ\]/g," ");
+    } else {
+        text = text.replace(/\[BSLZ\]/g,"");
+        text = text.replace(/\[LZ\]/g,"");
+    }		   	    
     
 	//text = text.replace(/&/,"&amp;");
-    //text = text.replace(/Ü/,"&Uuml;");
-    //text = text.replace(/Ä/,"&Auml;");
-    //text = text.replace(/Ö/,"&Ouml;");
-    //text = text.replace(/ü/,"&uuml;");
-    //text = text.replace(/ä/,"&auml;");
-    //text = text.replace(/ö/,"&ouml;");
-    //text = text.replace(/ß/,"&szlig;");
-	//text = text.replace(/©/,"&copy;");
+    text = text.replace(/ï¿½/,"&Uuml;");
+    text = text.replace(/ï¿½/,"&Auml;");
+    text = text.replace(/ï¿½/,"&Ouml;");
+    text = text.replace(/ï¿½/,"&uuml;");
+    text = text.replace(/ï¿½/,"&auml;");
+    text = text.replace(/ï¿½/,"&ouml;");
+    text = text.replace(/ï¿½/,"&szlig;");
+	//text = text.replace(/ï¿½/,"&copy;");
 	return text;
 }
 
